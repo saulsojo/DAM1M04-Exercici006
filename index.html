@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-links">
+        <a href="index.html">Formulari</a>
+        <a href="interacció.html">Interactivitat</a>
+    </nav>
+</header>
+
+<div class="page-container">
+
+<h1>Formulari Professional</h1>
+
+<form>
+
+    <div class="section">
+        <h2>Dades personals</h2>
+
+        <div class="field">
+            <label>Nom complet</label>
+            <input type="text" required pattern="[A-Za-zÀ-ÿ ]+">
+        </div>
+
+        <div class="field">
+            <label>Correu electrònic</label>
+            <input type="email" required>
+        </div>
+
+        <div class="field">
+            <label>Telèfon</label>
+            <input type="tel" required pattern="[0-9]{9}">
+        </div>
+
+        <div class="field">
+            <label>Edat</label>
+            <input type="number" min="1" max="120" required>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Dates i preferències</h2>
+        <div class="field"><label>Data de naixement</label><input type="date"></div>
+        <div class="field"><label>Franja horària</label><input type="time"></div>
+        <div class="field"><label>Color preferit</label><input type="color"></div>
+        <div class="field"><label>Nivell de satisfacció</label><input type="range" min="0" max="10"></div>
+    </div>
+
+    <div class="section">
+        <h2>Preferències</h2>
+
+        <div class="field">
+            <label>País</label>
+            <select>
+                <option value="">-- Selecciona --</option>
+                <option>Espanya</option>
+                <option>França</option>
+                <option>Itàlia</option>
+                <option>Alemanya</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <p>Aficions</p>
+            <label><input type="checkbox"> Música</label>
+            <label><input type="checkbox"> Esport</label>
+            <label><input type="checkbox"> Videojocs</label>
+        </div>
+
+        <div class="group">
+            <p>Nivell d'estudis</p>
+            <label><input type="radio" name="nivell"> ESO</label>
+            <label><input type="radio" name="nivell"> Batxillerat</label>
+            <label><input type="radio" name="nivell"> Universitat</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Comentaris</h2>
+        <textarea rows="5" placeholder="Escriu els teus comentaris..."></textarea>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Esborrar">
+    </div>
+
+</form>
+
+</div>
+</body>
+</html>
