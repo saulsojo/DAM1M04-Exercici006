@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivitat</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+
+<body id="pagina-interaccio">
+
+<header class="navbar">
+   
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><span></span><span></span><span></span></label>
+
+    <nav class="nav-links">
+        <a href="index.html">Formulari</a>
+        <a href="interacció.html">Interactivitat</a>
+    </nav>
+</header>
+
+<div class="page-container">
+
+<h1>Interactivitat amb CSS</h1>
+
+<!-- TABS -->
+<div class="section">
+    <h2>Pestanyes CSS (Tabs)</h2>
+
+    <div class="tabs-controls">
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+
+        <label for="tab1" class="tab-btn">Introducció</label>
+        <label for="tab2" class="tab-btn">Detalls</label>
+        <label for="tab3" class="tab-btn">Resum</label>
+    </div>
+
+    <div class="content content-1">
+        <p>Les pestanyes funcionen només amb HTML + CSS.</p>
+    </div>
+    <div class="content content-2">
+        <p>Utilitzem :has() sobre el body per detectar quin radio està activat.</p>
+    </div>
+    <div class="content content-3">
+        <p>És un sistema potent per crear interfícies sense JavaScript.</p>
+    </div>
+</div>
+
+<!-- FLIP CARD -->
+<div class="section">
+    <h2>Flip Card (component extra)</h2>
+
+    <div class="flip-wrapper">
+        <input type="checkbox" id="flip-toggle">
+        <label for="flip-toggle" class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-face flip-front">
+                    <h3>Front</h3>
+                </div>
+                <div class="flip-face flip-back">
+                    <p>Girat amb checkbox + CSS!</p>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
